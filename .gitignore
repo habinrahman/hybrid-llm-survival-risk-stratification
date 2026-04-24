@@ -1,0 +1,101 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.pyd
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+.nox/
+.tox/
+
+# Type checking
+.mypy_cache/
+.pyre/
+.pytype/
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# --- Jupyter / IPython ---
+.ipynb_checkpoints/
+.python_history
+
+# --- Logs / local runtime files ---
+*.log
+*.pid
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+.cursor/
+
+# --- OS junk (Windows/macOS) ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# --- ML / Experiment tracking artifacts ---
+wandb/
+mlruns/
+mlartifacts/
+lightning_logs/
+
+# --- HuggingFace / Transformers cache (when created inside repo) ---
+.cache/
+hf_cache/
+
+# --- Project outputs (generated) ---
+models/
+results/
+logs/
+
+# Best configs written by tuning scripts
+configs/config.best.yaml
+configs/*.best.yaml
+configs/*best*.yaml
+
+# Optuna local DB (if you use SQLite storage)
+*.db
+*.sqlite
+*.sqlite3
+
+# Local secrets (if you ever add them)
+.env.*
+*.pem
+*.key
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+logs/
+*.log
+
+*.zip
+
+# model artifacts (optional if large)
+models/*.pkl
+models/*.pt
+models/*.pth
+
+.DS_Store
+.env
