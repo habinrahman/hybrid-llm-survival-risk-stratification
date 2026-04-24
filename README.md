@@ -1,3 +1,8 @@
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-DeepSurv-red)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
+![License](https://img.shields.io/badge/License-Academic-lightgrey)
+
 # Hybrid LLM-Survival Model for Early Patient Risk Stratification
 
 This project implements a multimodal deep learning approach for patient risk stratification by combining structured Electronic Health Record (EHR) data with unstructured clinical notes using Large Language Models (LLMs) and survival analysis.
