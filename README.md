@@ -351,18 +351,7 @@ survival:
    - Add more features
    - Perform hyperparameter tuning
 
-## Citation
 
-If you use this code, please cite:
-
-```bibtex
-@misc{hybrid-llm-survival,
-  title={Hybrid LLM-Survival Model for Early Patient Risk Stratification},
-  author={Shaima Rauf},
-  year={2025},
-  institution={NMAM Institute of Technology}
-}
-```
 
 ## References
 
