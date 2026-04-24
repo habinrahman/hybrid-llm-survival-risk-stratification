@@ -375,15 +375,3 @@ If you use this code, please cite:
 
 This project is for academic research purposes. See LICENSE file for details.
 
-## Contact
-
-For questions or issues:
-- Email: shaima.rauf@example.com
-- Project Guide: Dr. Vijay Murari
-- Institution: NMAM Institute of Technology, Nitte
-
-## Acknowledgments
-
-- NMAM Institute of Technology for research support
-- MIMIC-III dataset creators and maintainers
-- HuggingFace for pre-trained ClinicalBERT models
