@@ -1,0 +1,67 @@
+# Hybrid LLM–Survival Model — production configuration
+
+model:
+  llm_model: "emilyalsentzer/Bio_ClinicalBERT"
+  max_sequence_length: 512
+  embedding_batch_size: 16
+
+survival:
+  cox:
+    penalizer: 0.01
+    l1_ratio: 0.0
+  deepsurv:
+    hidden_layers: [128, 64, 32]
+    dropout: 0.3
+    learning_rate: 0.001
+    epochs: 100
+    batch_size: 64
+    early_stopping_patience: 20
+    early_stopping_eval_every: 2
+    early_stopping_min_delta: 0.001
+
+fusion:
+  fusion_method: "concatenation"
+  text_dim_reduction: 64
+  normalize_before_fusion: true
+
+training:
+  test_size: 0.2
+  val_size: 0.1
+  random_state: 42
+  imputation_strategy: "median"
+  normalization: "standardize"
+
+evaluation:
+  time_horizons: [2.4, 4.8, 9.7]
+  metrics: ["c_index", "brier_score", "calibration"]
+
+paths:
+  data_dir: "./data"
+  models_dir: "./models"
+  results_dir: "./results"
+  logs_dir: "./logs"
+
+# Custom cohort: set cohort_csv to a file under data_dir (or an absolute path).
+# Required in the file: text, time-to-event, and event columns (names below).
+# Also include every column listed in numeric_features and categorical_features.
+data:
+  cohort_csv: null
+  csv_kwargs: {}
+  text_column: clinical_notes
+  time_column: time
+  event_column: event
+  patient_id_column: subject_id
+  numeric_features: null
+  categorical_features: null
+
+# Advanced reporting (KM, SHAP, PDF, bar chart, logging)
+advanced:
+  enabled: true
+  log_file: "project.log"
+  run_shap: true
+  shap_max_background: 300
+  shap_max_eval: 150
+
+outcomes:
+  target: "mortality"
+  time_to_event: "los_days"

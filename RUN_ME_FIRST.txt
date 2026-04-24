@@ -1,0 +1,30 @@
+HYBRID LLM–SURVIVAL MODEL
+================================
+
+1. Extract the ZIP file.
+2. Open the project folder.
+3. Activate the virtual environment:
+
+   Windows:
+   venv\Scripts\activate
+
+   macOS/Linux:
+   source venv/bin/activate
+
+4. Run the project:
+
+   Train and evaluate:
+   python run_pipeline.py
+
+   Start the API:
+   uvicorn api:app --reload
+
+   Launch Streamlit:
+   streamlit run app/streamlit_app.py
+
+5. API Documentation:
+   http://127.0.0.1:8000/docs
+
+For detailed information, refer to:
+- README.md
+- PROJECT_DOCUMENTATION.md

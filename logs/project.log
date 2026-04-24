@@ -1,0 +1,7 @@
+2026-04-14 22:37:47,944 - INFO - Hybrid survival pipeline logger initialized.
+2026-04-14 22:37:47,944 - INFO - Pipeline started.
+2026-04-14 23:22:43,347 - INFO - Saved Kaplan–Meier curve to results/kaplan_meier_curve.png
+2026-04-14 23:22:43,569 - INFO - Saved model comparison chart to results/model_comparison.png
+2026-04-14 23:22:43,571 - WARNING - SHAP not installed; skip explanation plot.
+2026-04-14 23:27:02,268 - INFO - Hybrid survival pipeline logger initialized.
+2026-04-14 23:27:02,269 - INFO - Pipeline started.
